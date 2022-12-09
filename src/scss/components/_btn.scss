@@ -1,0 +1,22 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  width: 108px;
+  height: 34px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  border: 2px solid var(--brand-brighter);
+  border-radius: 2px;
+  padding: 9px 15px;
+  transition: 0.7s ease;
+
+  &:hover {
+    background-color: var(--brand-brighter);
+  }
+}

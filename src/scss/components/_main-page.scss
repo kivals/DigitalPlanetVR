@@ -1,0 +1,11 @@
+.main-page {
+  flex-shrink: 0;
+  min-height: 100%;
+  background-image: url("../img/main/body-background-main-gradient@1x.png"), url("../img/main/body-background-main@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/main/body-background-main-gradient@1x.png"), url("../img/main/body-background-main@2x.jpg");
+  }
+}

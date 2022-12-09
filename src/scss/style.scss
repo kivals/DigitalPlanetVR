@@ -5,7 +5,11 @@
 @import "config/settings";
 
 // подключения компонентов страницы
+@import "./components/main-page";
 @import "./components/header";
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/btn";
 
 body {
 

@@ -1,0 +1,35 @@
+.nav {
+  margin-right: 20px;
+  margin-bottom: 8px;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav__item {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item:not(:last-child):after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: #B0ACAC;
+  border-radius: 50%;
+  margin-left: 17px;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.nav__link {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: var(--white);
+}

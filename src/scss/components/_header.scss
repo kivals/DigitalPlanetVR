@@ -1,0 +1,21 @@
+.header {
+  height: 74px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header__order {
+  flex-shrink: 0;
+}
+
+.header__btn {
+  margin-right: 20px;
+}
+
+.header__phone {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--white);
+}

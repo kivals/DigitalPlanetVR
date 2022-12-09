@@ -6,5 +6,10 @@
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
-  --light-color: #fff;
+  --white: #FFFFFF;
+  --brand: #15B28D;
+  --brand-brighter: #0DD1A2;
+  --black: #1C1C1C;
+  --correct: #1DC04B;
+  --incorrect: #F97676;
 }
