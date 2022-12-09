@@ -1,0 +1,25 @@
+.intro {
+  padding-top: 153px;
+  padding-left: 57px;
+}
+
+.intro__title {
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 110px;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.intro__text {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 25px;
+  color: var(--white);
+  margin-bottom: 71px;
+}
+
+.intro__buttons > button:not(:last-child) {
+  margin-right: 24px;
+}
+
