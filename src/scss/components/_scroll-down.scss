@@ -1,0 +1,33 @@
+.scroll-down {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.64;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-down:hover {
+  opacity: 1;
+}
+
+.scroll-down__text {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: var(--white);
+  letter-spacing: 0.12em;
+  margin-bottom: 5px;
+
+}
+
+.scroll-down__icon {
+  width: 15px;
+  height: 7px;
+  fill: #ffffff;
+}
+
+.scroll-down__icon:hover {
+  opacity: 1;
+}

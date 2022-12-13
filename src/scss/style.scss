@@ -6,10 +6,12 @@
 
 // подключения компонентов страницы
 @import "./components/btn";
+@import "./components/scroll-down";
 @import "./components/main-page";
 @import "./components/header";
 @import "./components/main";
-@import "./components/footer";
+@import "components/scroll";
+@import "./components/social";
 @import "./components/logo";
 @import "./components/nav";
 @import "components/intro";

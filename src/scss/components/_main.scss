@@ -1,4 +1,18 @@
 .main {
   flex-grow: 1;
   width: 100%;
+  padding-bottom: 30px;
+}
+
+.main--intro {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/main/kid@1x.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 430px 350px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/main/kid@2x.png");
+  }
 }
