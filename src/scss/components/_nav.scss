@@ -1,6 +1,9 @@
 .nav {
   margin-right: 20px;
   margin-bottom: 8px;
+  @include high-desktop {
+    display: none;
+  }
 }
 
 .nav__list {
@@ -11,6 +14,7 @@
 .nav__item {
   display: flex;
   align-items: center;
+  padding: 3px 0;
 }
 
 .nav__item:not(:last-child):after {
