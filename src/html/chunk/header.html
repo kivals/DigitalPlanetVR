@@ -1,25 +1,47 @@
 <header class="header container">
   <a href="#" class="logo">
     <span class="visually-hidden">Логотип Digital Planet</span>
-    <img loading="lazy" src="/img/logo.png" width="193" height="28" alt="Логотип Digital Planet">
+    <picture>
+      <source media="(max-width: 768px)" srcset="/img/logo_mobile.png">
+      <img loading="lazy" src="/img/logo.png" width="193" height="28" alt="Логотип Digital Planet">
+    </picture>
   </a>
 
   <nav class="header__nav nav" title="Главное меню">
     <ul class="nav__list list-reset" title="Главное меню">
+      <li class="nav__item nav__item--main"><a class="nav__link" href="#" data-menu-item>Главная</a></li>
       <li class="nav__item"><a class="nav__link" href="#" data-menu-item>О продукте</a></li>
       <li class="nav__item"><a class="nav__link" href="#" data-menu-item>Как работает</a></li>
       <li class="nav__item"><a class="nav__link" href="#" data-menu-item>Технология</a></li>
       <li class="nav__item"><a class="nav__link" href="#" data-menu-item>Вопросы</a></li>
       <li class="nav__item"><a class="nav__link" href="#" data-menu-item>Контакты</a></li>
     </ul>
+
+<!--    <button class="btn-reset burger-close" aria-label="Закрыть меню" data-menu-close></button>-->
+
+    <div class="nav__mobile-footer">
+      <a href="tel:88005553575" class="nav_phone phone">8 (800) 555 35 75</a>
+      <div class="social">
+        <a href="#" class="social__link">
+          <svg class="social__icon">
+            <use xlink:href="../img/icons/sprite.svg#facebook"></use>
+          </svg>
+        </a>
+        <a href="#" class="social__link">
+          <svg class="social__icon">
+            <use xlink:href="../img/icons/sprite.svg#vk"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
   </nav>
 
   <div class="header__order">
     <button class="btn-reset header__btn btn btn--small">Заказать</button>
-    <a href="tel:88005553575" class="header__phone">8 (800) 555 35 75</a>
+    <a href="tel:88005553575" class="header__phone phone">8 (800) 555 35 75</a>
   </div>
 
-  <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+  <button class="btn-reset burger active" aria-label="Открыть меню" aria-expanded="false" data-burger>
     <span class="burger__line"></span>
     <span class="burger__line"></span>
     <span class="burger__line"></span>

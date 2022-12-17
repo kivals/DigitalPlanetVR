@@ -4,19 +4,28 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+
+  @include tablet {
+    height: 56px;
+  }
 }
 
 .header__order {
+  z-index: 3;
   flex-shrink: 0;
 }
 
 .header__btn {
   margin-right: 20px;
+
+  @include tablet {
+    margin-right: 0;
+  }
 }
 
 .header__phone {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 18px;
-  color: var(--white);
+
+  @include tablet {
+    display: none;
+  }
 }

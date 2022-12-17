@@ -5,6 +5,7 @@
   background-image: url("../img/main/body-background-main-gradient@1x.png"), url("../img/main/body-background-main@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 0, 50% 0;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/main/body-background-main-gradient@1x.png"), url("../img/main/body-background-main@2x.jpg");

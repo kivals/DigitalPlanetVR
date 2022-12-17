@@ -40,6 +40,7 @@
   &:before {
     content: "";
     background-image: url("../img/main/btn-primary.png");
+    background-size: cover;
     width: 31px;
     height: 31px;
     margin-right: 11px;
@@ -47,6 +48,18 @@
 
   &:hover {
     background-color: var(--brand-brighter);
+  }
+
+  @include small-tablet {
+    width: 207px;
+    height: 55px;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 18px 35px;
+    &:before {
+      width: 25px;
+      height: 25px;
+    }
   }
 }
 
@@ -65,6 +78,7 @@
   &:before {
     content: "";
     background-image: url("../img/main/btn-secondary.png");
+    background-size: cover;
     width: 31px;
     height: 31px;
     margin-right: 11px;
@@ -73,6 +87,18 @@
   &:hover {
     border-color: var(--brand-brighter);
     background-color: var(--brand-brighter);
+  }
+
+  @include small-tablet {
+    width: 207px;
+    height: 55px;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 18px 35px;
+    &:before {
+      width: 25px;
+      height: 25px;
+    }
   }
 }
 

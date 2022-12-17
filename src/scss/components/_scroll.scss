@@ -1,8 +1,16 @@
 .scroll {
   width: 100%;
   display: flex;
+
+  @include small-tablet {
+    justify-content: center;
+  }
 }
 
 .scroll__social {
   width: 50%;
+
+  @include small-tablet {
+    display: none;
+  }
 }

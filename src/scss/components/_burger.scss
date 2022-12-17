@@ -3,6 +3,7 @@
   position: relative;
   width: 44px;
   height: 44px;
+  z-index: 3;
 
   &__line {
     position: absolute;
@@ -13,6 +14,10 @@
     height: 2px;
     background-color: var(--white);
     transform: translateX(-50%) translateY(-50%);
+
+    span {
+      transition: all 0.3s ease 0s;
+    }
 
     &:first-child {
       margin-top: -7px;
@@ -26,21 +31,21 @@
     }
   }
 
-  @include high-desktop {
+  @include tablet {
     display: block;
   }
-}
 
-.burger-close {
-  position: absolute;
-  right: var(--container-offset);
-  top: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 10px;
-  width: 44px;
-  height: 44px;
-  background-image: url("../img/header/close.svg");
-  background-position: center;
-  background-size: 14px 12px;
-  background-repeat: no-repeat;
+  &--active {
+    span {
+      transform: scale(0);
+      &:first-child {
+        transform: rotate(-45deg);
+        top: 29px;
+      }
+      &:nth-child(2) {
+        transform: rotate(45deg);
+        //bottom: calc(50% - 1px);
+      }
+    }
+  }
 }

@@ -2,6 +2,9 @@
   flex-grow: 1;
   width: 100%;
   padding-bottom: 30px;
+  @include small-tablet {
+    padding-bottom: 20px;
+  }
 }
 
 .main--intro {
@@ -14,5 +17,13 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/main/kid@2x.png");
+  }
+
+  @include tablet {
+    background-size: 380px auto;
+  }
+
+  @include small-tablet {
+    background-image: none;
   }
 }
